@@ -1,0 +1,19 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: $color-primary-red;
+  padding: 0.5rem;
+  color: $color-white;
+}
+
+.attribution {
+  font-size: 1.25rem;
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(92, 10, 92);
+  }
+}

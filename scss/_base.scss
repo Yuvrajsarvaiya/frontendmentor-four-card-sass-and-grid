@@ -1,0 +1,56 @@
+// primary
+// - Red: hsl(0, 78%, 62%)
+// - Cyan: hsl(180, 62%, 55%)
+// - Orange: hsl(34, 97%, 64%)
+// - Blue: hsl(212, 86%, 64%)
+
+$color-primary-red: hsl(0, 78%, 62%);
+$color-primary-cyan: hsl(180, 62%, 55%);
+$color-primary-orange: hsl(34, 97%, 64%);
+$color-primary-blue: hsl(212, 86%, 64%);
+
+// ### Neutral
+// - Very Dark Blue: hsl(234, 12%, 34%)
+// - Grayish Blue: hsl(229, 6%, 66%)
+// - Very Light Gray: hsl(0, 0%, 98%)
+
+$color-dark-blue: hsl(234, 12%, 34%);
+$color-grayish-blue: hsl(229, 6%, 66%);
+$color-light-gray: hsl(0, 0%, 98%);
+
+$color-white: #fff;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// font size -16/10  62.5% (10px)
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 56.25em) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: 23.43em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-grayish-blue;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  width: 85%;
+}

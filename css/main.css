@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 23.43em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #a3a5ae;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.mb-small {
+  margin-bottom: 1.2rem;
+}
+
+.section-features {
+  margin-bottom: 10rem;
+  padding: 10rem 0;
+  background-color: #fafafa;
+}
+
+.section-heading {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.4rem;
+  color: #4c4e61;
+  line-height: 1.5;
+}
+
+.heading--main {
+  display: block;
+  font-weight: 200;
+}
+
+.heading--sub {
+  display: block;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+
+.features {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 23.43em) {
+  .features {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.feature {
+  min-height: 20rem;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(76, 78, 97, 0.4);
+}
+
+.feature--supervisor {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+@media screen and (max-width: 56.25em) {
+  .feature--supervisor {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: initial;
+  }
+}
+
+.feature--calculator {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+@media screen and (max-width: 56.25em) {
+  .feature--calculator {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: initial;
+  }
+}
+
+.feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.feature--red::before {
+  background-color: #ea5353;
+}
+
+.feature--cyan::before {
+  background-color: #45d3d3;
+}
+
+.feature--orange::before {
+  background-color: #fcaf4a;
+}
+
+.feature--blue::before {
+  background-color: #549ef2;
+}
+
+.feature__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+.feature__paragraph {
+  font-size: 1rem;
+  margin: 0.5rem 1rem 3rem 0;
+  line-height: 1.8;
+}
+
+.feature__image {
+  display: block;
+  margin-left: auto;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #ea5353;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 1.25rem;
+}
+
+.attribution a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #5c0a5c;
+}
+/*# sourceMappingURL=main.css.map */

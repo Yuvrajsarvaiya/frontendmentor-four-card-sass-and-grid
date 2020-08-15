@@ -1,0 +1,129 @@
+.mb-small {
+  margin-bottom: 1.2rem;
+}
+
+.section-features {
+  margin-bottom: 10rem;
+  padding: 10rem 0;
+  background-color: $color-light-gray;
+}
+
+.section-heading {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.4rem;
+  color: $color-dark-blue;
+  line-height: 1.5;
+
+  &--main {
+    display: block;
+    font-weight: 200;
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+
+.features {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+
+  @media screen and (max-width: 56.25em) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  @media screen and (max-width: 23.43em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.feature {
+  min-height: 20rem;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba($color-dark-blue, 0.4);
+
+  &--supervisor {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+
+    @media screen and (max-width: 56.25em) {
+      @include clearGrid;
+    }
+  }
+
+  &--calculator {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+
+    @media screen and (max-width: 56.25em) {
+      @include clearGrid;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+
+  &--red::before {
+    background-color: $color-primary-red;
+  }
+
+  &--cyan::before {
+    background-color: $color-primary-cyan;
+  }
+
+  &--orange::before {
+    background-color: $color-primary-orange;
+  }
+
+  &--blue::before {
+    background-color: $color-primary-blue;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-dark-blue;
+  }
+
+  &__paragraph {
+    font-size: 1rem;
+    margin: 0.5rem 1rem 3rem 0;
+    line-height: 1.8;
+  }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+    height: 5rem;
+    object-fit: cover;
+  }
+}

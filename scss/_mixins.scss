@@ -1,0 +1,5 @@
+@mixin clearGrid {
+  grid-column: auto;
+  grid-row: auto;
+  align-self: initial;
+}
